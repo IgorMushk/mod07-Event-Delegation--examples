@@ -64,11 +64,10 @@ function onClick(evt) {
 
   if (result) {
     nameWinner.textContent = `Winner ${player} 😎`;
-    //resetGame(); !!! +++
+    //resetGame(); !!! +++ Mod-09
     setTimeout(() => {
       resetGame();
     }, 1500);
-
     return;
   } else if (isEndGame) {
     console.log(`Try again 😱`);
