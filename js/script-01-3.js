@@ -51,11 +51,22 @@ function onPaletteContainerClick(evt) {
     return;
   }
 
+  // НУжно добавить class = is-active не на єлемент с цветом class = color-swatch
+  // а на div в который он вложен class = color-card - селлектор css .color-card.is-active {}
+
+  console.log(evt.target);
+  console.log(evt.target.dataset.hex);
+  console.log(evt.target.parentNode);
+
+  // evt.target.parentNode - если найти родителя выбранного эллемена
+  // .closest(".color-card") - ближайший на верх вложенности эллемент с таким селектором
   const swatchEl = evt.target;
   const parentColorCard = swatchEl.closest(".color-card");
 
   removeActiveCardClass();
+  //parentColorCard.classList.add("is-active");
   addActiveCardClass(parentColorCard);
+  //document.body.style.backgroundColor = swatchEl.dataset.hex;
   setBodyBgColor(swatchEl.dataset.hex);
 }
 
