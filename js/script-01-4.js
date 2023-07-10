@@ -64,7 +64,11 @@ function onClick(evt) {
 
   if (result) {
     nameWinner.textContent = `Winner ${player} 😎`;
-    resetGame();
+    //resetGame(); !!! +++
+    setTimeout(() => {
+      resetGame();
+    }, 1500);
+
     return;
   } else if (isEndGame) {
     console.log(`Try again 😱`);
