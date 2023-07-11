@@ -1,3 +1,5 @@
+// https://www.youtube.com/watch?v=hEF4y3fVZG8&t=7366s
+
 const findUniq = (arr) =>
   arr.find((current, i) =>
     current.split("").every((item) => arr.every((comparison, j) => (i !== j ? !comparison.includes(item) : true)))
