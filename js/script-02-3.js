@@ -1,4 +1,6 @@
-// https://www.youtube.com/watch?v=2Lm6LT3GXQE&t=5108s
+// 1. https://www.youtube.com/watch?v=2Lm6LT3GXQE&t=5108s
+// 2. https://www.youtube.com/watch?v=2Lm6LT3GXQE&t=5955s
+// 2. еще раз пояснение  https://www.youtube.com/watch?v=2Lm6LT3GXQE&t=6883s
 
 // Завдання 2 - lazy-loading
 // Реалізувати нескінченне завантаження за допомогою intersection observer
